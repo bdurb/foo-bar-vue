@@ -1,5 +1,7 @@
 # foo-bar-vue
 
+basic counter application that impliments the foobar logic on the numbers from the counter.
+
 ## Project setup
 ```
 npm install
