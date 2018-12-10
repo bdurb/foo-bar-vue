@@ -1,11 +1,15 @@
 <template>
   <div id="app">
+    <h1>I Pitty the Foo Bar</h1>
     <h3>{{ count }}</h3>
     <button v-on:click="incrementCount">+</button>
     <button v-on:click="decrementCount">-</button>
 
     <h1 v-if="isZero"></h1>
-    <h1 v-else-if="isFooBar">You are FooBar</h1>
+    <div v-else-if="isFooBar">
+    <h1>You are FooBar</h1>
+    <img src="./assets/mr-t.jpg" alt="Its Mr. T" />
+    </div>
     <h1 v-else-if="isFoo">You are Foo</h1>
     <h1 v-else-if="isBar">You are Bar</h1>
     <h1 v-else>No Foos, and no Bars</h1>
@@ -53,6 +57,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 200px;
 }
 </style>
