@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <h3>{{ count }}</h3>
+    <button v-on:click="incrementCount">+</button>
+    <button>-</button>
   </div>
 </template>
 
@@ -11,6 +13,11 @@ export default {
   data() {
     return {
       count: 0
+    }
+  },
+  methods: {
+    incrementCount() {
+      this.count++
     }
   }
 }
