@@ -3,6 +3,11 @@
     <h3>{{ count }}</h3>
     <button v-on:click="incrementCount">+</button>
     <button v-on:click="decrementCount">-</button>
+
+    <h1 v-if="isFooBar">You are FooBar</h1>
+    <h1 v-else-if="isFoo">You are Foo</h1>
+    <h1 v-else-if="isBar">You are Bar</h1>
+    <h1 v-else>No Foos, and no Bars</h1>
   </div>
 </template>
 
