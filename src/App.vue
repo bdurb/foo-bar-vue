@@ -22,6 +22,17 @@ export default {
     decrementCount() {
       this.count--
     }
+  },
+  computed: {
+    isFooBar() {
+      return this.count % 3 === 0 && this.count % 5 === 0
+    },
+    isFoo() {
+      return this.count % 3 === 0
+    },
+    isBar() {
+      return this.count % 5 === 0
+    }
   }
 }
 </script>
