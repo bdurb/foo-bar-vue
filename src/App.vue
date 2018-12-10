@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>Your Count</p>
+    <h3>{{ count }}</h3>
   </div>
 </template>
 
@@ -8,7 +8,11 @@
 
 export default {
   name: 'app',
-  
+  data() {
+    return {
+      count: 0
+    }
+  }
 }
 </script>
 
