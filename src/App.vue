@@ -4,7 +4,8 @@
     <button v-on:click="incrementCount">+</button>
     <button v-on:click="decrementCount">-</button>
 
-    <h1 v-if="isFooBar">You are FooBar</h1>
+    <h1 v-if="isZero"></h1>
+    <h1 v-else-if="isFooBar">You are FooBar</h1>
     <h1 v-else-if="isFoo">You are Foo</h1>
     <h1 v-else-if="isBar">You are Bar</h1>
     <h1 v-else>No Foos, and no Bars</h1>
@@ -37,6 +38,9 @@ export default {
     },
     isBar() {
       return this.count % 5 === 0
+    },
+    isZero() {
+      return this.count === 0
     }
   }
 }
